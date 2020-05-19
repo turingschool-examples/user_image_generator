@@ -1,4 +1,6 @@
 class ImageGenerator
+
+  attr_reader :max_image_value
   def initialize(max)
     @max_image_value = max
   end
