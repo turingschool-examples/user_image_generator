@@ -1,23 +1,19 @@
 class ImageGenerator
 
-  attr_reader :max_image_value
+  attr_reader :max_image_size
   def initialize(max)
-    @max_image_value = max
-  end
-
-  def choose_random_number
-    rand(@max_image_value)
+    @max_image_size = max
   end
 
   def generate_images
     images = []
-    choose_random_number.times do |num|
+    rand(@max_image_size).times do |num|
       images << "image#{num}"
     end
     images
   end
 
   def assign_unknown_max_image_value(num)
-    @max_image_value = (num * choose_random_number)
+    @max_image_size = (num * rand(@max_image_size))
   end
 end

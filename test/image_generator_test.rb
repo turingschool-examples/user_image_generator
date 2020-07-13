@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'mocha/minitest'
 require './lib/image_generator'
 
 class ImageGeneratorTest < Minitest::Test
@@ -11,8 +12,13 @@ class ImageGeneratorTest < Minitest::Test
 
   def test_attributes
     image_generator = ImageGenerator.new(2500)
-    assert_equal 2500, image_generator.max_image_value
+    assert_equal 2500, image_generator.max_image_size
   end
-  # Using stubs and/or mocks, write the tests to confirm the functionality
+
+  def test_generate_images
+    image_generator = ImageGenerator.new(2500)
+    
+  end
+  # Using stubs write the tests to confirm the functionality
   # that exists in ./lib/image_generator.rb
 end
