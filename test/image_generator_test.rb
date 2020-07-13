@@ -15,10 +15,15 @@ class ImageGeneratorTest < Minitest::Test
     assert_equal 2500, image_generator.max_image_size
   end
 
-  def test_generate_images
-    image_generator = ImageGenerator.new(2500)
-    
-  end
   # Using stubs write the tests to confirm the functionality
   # that exists in ./lib/image_generator.rb
+
+  def test_generate_images
+
+  end
+
+  def test_change_max_size
+
+  end
+
 end
