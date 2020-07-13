@@ -13,7 +13,7 @@ class ImageGenerator
     images
   end
 
-  def assign_unknown_max_image_value(num)
+  def change_max_size(num)
     @max_image_size = (num * rand(@max_image_size))
   end
 end
